@@ -10,7 +10,7 @@ const StyledWrapper = styled.section`
   position: relative;
   width: 100%;
   margin: auto;
-  max-width: 1800px;
+  max-width: 1200px;
   background-color: #fff;
   padding: 0.3rem 0;
   background: url(${WeddingImage});
@@ -120,7 +120,7 @@ export default function Wedding() {
               <span className="txt">11:00 - 18/12/2022</span>
             </li>
             <li className="item">
-              <span className="label">Vào lúc</span>
+              <span className="label">Tại</span>
               <div className="txt loc">
                 <span>Xóm Khanh Hải, xã Văn Hải</span>
                 <span>huyện Kim Sơn, tỉnh Ninh Bình</span>
@@ -138,7 +138,7 @@ export default function Wedding() {
           <h3 className="title">Nhà gái</h3>
           <ul className="items">
             <li className="item">
-              <span className="label">Vào lúc</span>
+              <span className="label">Vào l</span>
               <span className="txt">11:00 - 18/12/2022</span>
             </li>
             <li className="item">

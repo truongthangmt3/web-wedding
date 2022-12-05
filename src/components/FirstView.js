@@ -18,7 +18,6 @@ const AniDown = keyframes`
     }
 `
 const StyledWrapper = styled.section`
-  background-color: #e4e3ea;
   .inner_wrapper {
     display: flex;
     align-items: center;
@@ -29,9 +28,8 @@ const StyledWrapper = styled.section`
     margin: auto;
     height: 100vh;
     background-image: url(${BGImage});
-    /* background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w12.png?x-oss-process=image/resize,w_2500'); */
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     &:after {
