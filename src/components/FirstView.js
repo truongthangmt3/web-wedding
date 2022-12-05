@@ -6,6 +6,7 @@ import Timer from 'react-compound-timer'
 import Typed from 'typed.js'
 
 import FrameImage from '../assets/imgs/frame.png'
+import BGImage from '../assets/imgs/bg.jpg'
 const AniDown = keyframes`
     from{
         transform:translateY(-10px);
@@ -24,12 +25,13 @@ const StyledWrapper = styled.section`
     justify-content: center;
     position: relative;
     width: 100%;
-    max-width: 2200px;
+    max-width: 1200px;
     margin: auto;
     height: 100vh;
-    background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w12.png?x-oss-process=image/resize,w_2500');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image :  url(${BGImage}) ;
+    /* background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w12.png?x-oss-process=image/resize,w_2500'); */
+    background-repeat: no-repeat; 
+    background-size:  100% auto;
     background-position: center;
     background-attachment: fixed;
     &:after {
@@ -103,7 +105,7 @@ const StyledWrapper = styled.section`
   }
 `
 const now = new Date().getTime()
-const deadline = new Date(2021, 8, 15, 0, 0, 0).getTime()
+const deadline = new Date(2022, 11, 18, 0, 0, 0).getTime()
 const initCountNum = deadline - now
 // const initCountNum = 3000;
 export default function FirstView() {
@@ -127,10 +129,10 @@ export default function FirstView() {
     // elRef refers to the <span> rendered below
     typed.current = new Typed(el.current, {
       strings: [
-        '我们<strong>相遇</strong>',
-        '我们<strong>相知</strong>',
-        '我们<strong>相爱</strong>',
-        '我们<strong>结婚</strong>啦!'
+        ' Thăng ❤️<strong> Nga</strong> ',
+        // 'Quen <strong>biết</strong></strong>',
+        // 'Yêu <strong>thương</strong>',
+        // 'Kết<strong> hôn</strong>'
       ],
       typeSpeed: 200,
       backSpeed: 50,
@@ -181,12 +183,12 @@ export default function FirstView() {
                 formatValue={(value) => `${value < 10 ? `0${value}` : value}`}
               >
                 <span className="num day">
-                  <Timer.Days />天<Timer.Hours />时<Timer.Minutes />分
-                  <Timer.Seconds />秒
+                  <Timer.Days /> Ngày <Timer.Hours /> Giờ <Timer.Minutes /> Phút  
+                  {" "}<Timer.Seconds /> Giây
                 </span>
               </Timer>
             </div>
-            <div className="time">2021.09.15</div>
+            <div className="time">18.12.2022</div>
           </div>
         </div>
       </div>

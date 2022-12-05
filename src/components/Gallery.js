@@ -92,20 +92,20 @@ const StyledWrapper = styled.section`
   }
 `
 
-const weddings = Array.from(Array(29).keys())
+const weddings = Array.from(Array(15).keys())
   .map((v, idx) => `w${idx + 1}`)
   .filter(
     (p) => !['w2', 'w6', 'w7', 'w13', 'w19', 'w26', 'w21', 'w10'].includes(p)
   )
-const dailys = Array.from(Array(37).keys())
+const dailys = Array.from(Array(15).keys())
   .map((v, idx) => `d${idx + 1}`)
   .filter((p) => !['d7', 'd12', 'd15', 'd20', 'd21'].includes(p))
 console.log({ weddings })
 const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
   const viewCount = useRef(0)
   const title = {
-    wedding: '羊二与聪聪的婚纱照',
-    dailys: '羊二与聪聪的日常'
+    wedding: 'Ảnh cưới',
+    dailys: 'Ảnh hàng ngày nè'
   }
   const [reiniting, setReiniting] = useState(false)
   console.log({ photos })
@@ -135,7 +135,7 @@ const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
     }
   }, [photos])
   return reiniting ? (
-    <Loading>初始化...</Loading>
+    <Loading>Chờ xíu nhé...</Loading>
   ) : (
     <LightGallery
       onAfterClose={handleLgClose}
@@ -174,7 +174,7 @@ export default function Gallery({ popupDan }) {
   }
   return (
     <StyledWrapper>
-      <Title title="回忆·图库" />
+      <Title title="Thư viện ảnh" />
       <div className="btns">
         <div className="group">
           <button
@@ -182,14 +182,14 @@ export default function Gallery({ popupDan }) {
             data-cate="wedding"
             onClick={handleCateClick}
           >
-            婚纱
+            Ảnh cưới
           </button>
           <button
             className={`btn ${cate == 'dailys' ? 'curr' : ''}`}
             data-cate="dailys"
             onClick={handleCateClick}
           >
-            日常
+            Ảnh chơi bời
           </button>
         </div>
       </div>
