@@ -163,7 +163,6 @@ export default function FirstView() {
       )}
       <div className="inner_wrapper">
         <div className="box">
-          {/* <div className="married">我们结婚啦</div> */}
           <div className="title">
             💕<span ref={el}></span>💕
           </div>
@@ -193,7 +192,6 @@ export default function FirstView() {
         </div>
       </div>
       <HiChevronDoubleDown className="down" />
-      {/* <img src={WelcomeImage} /> */}
     </StyledWrapper>
   )
 }

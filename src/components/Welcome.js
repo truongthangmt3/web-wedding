@@ -127,7 +127,7 @@ export default function Welcome() {
   const [stop, setStop] = useState(initCountNum < 0)
   return (
     <StyledWrapper>
-      <Title title="欢迎参加" />
+      <Title title="Xin chào" />
       <div className="wrapper">
         <div className="countdown">
           <Timer

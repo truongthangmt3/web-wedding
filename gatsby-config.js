@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: '我们结婚啦 - wedding - Tristan - 杨国春',
-    author: 'Tristan',
-    description: '杨二的结婚网站'
+    title: 'Lễ thành hôn Trường Thăng - Thanh Nga',
+    author: 'Kasonlu',
+    description: 'wedding-website'
   },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Wedding',
-        short_name: 'Tristan',
+        short_name: 'Kasonlu',
         start_url: '/',
         background_color: '#1b1f22',
         theme_color: '#7f828d',

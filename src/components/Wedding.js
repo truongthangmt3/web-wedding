@@ -110,7 +110,7 @@ const StyledWrapper = styled.section`
 export default function Wedding() {
   return (
     <StyledWrapper>
-      <Title title="婚礼" />
+      <Title title="Lễ thành hôn" />
       <div className="wrapper">
         <div className="box">
           <h3 className="title">住宿</h3>

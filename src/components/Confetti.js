@@ -135,7 +135,7 @@ export default function Celebrate({ closeDan, dan = '超长回忆蛋' }) {
     <StyledPopup>
       <Confetti gravity={0.2} numberOfPieces={300} />
       <div className="tip">
-        <h3 className="title">恭喜🎉🎉🎉</h3>
+        <h3 className="title">Chúc mừng🎉🎉🎉</h3>
         <div className="content" ref={el}></div>
         <div className="ps">* 活动最终解释权归新郎所有</div>
         <div className="close" onClick={closeDan}>

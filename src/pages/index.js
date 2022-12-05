@@ -30,7 +30,7 @@ export default function Index() {
     <>
       <CommonStyle />
       <Reset />
-      {dan && <Confetti dan={dan} closeDan={closeDan} />}
+      {/* {dan && <Confetti dan={dan} closeDan={closeDan} />} */}
       <FirstView />
       {/* <Couple popupDan={setDan} /> */}
       {/* <Story /> */}
@@ -41,17 +41,6 @@ export default function Index() {
     </>
   )
 }
-
-export const pageQuery = graphql`
-  query PageQuery {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-  }
-`
 
 export function Head({ data }) {
   const { title, description } = data.site.siteMetadata
