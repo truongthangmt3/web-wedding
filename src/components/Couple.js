@@ -31,13 +31,13 @@ const StyledWrapper = styled.section`
         background-position: center;
         overflow: hidden;
         &.boy {
-          background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w4.png?x-oss-process=image/resize,w_400'),
+          background-image: url('https://lh5.googleusercontent.com/-lgWmD5r3vHckw6BBD25sKwIqMkoqEE7-vxJkdfuc_pmCsWCJwvuyEDEiaFz9l9fx_g=w2400'),
             url(${FrameImage});
           background-size: 75%, 100%;
           background-position-y: 5px;
         }
         &.girl {
-          background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w1.png?x-oss-process=image/resize,w_400'),
+          background-image: url('https://lh5.googleusercontent.com/rI5kTOy0hkV3SX6TbPsnlgvYExztdxkd5o0zbuSblUXbQCVOFNQejIKKFJ7hYNgU80k=w2400'),
             url(${FrameImage});
         }
         img {
@@ -46,7 +46,7 @@ const StyledWrapper = styled.section`
         }
       }
       .name {
-        font-family: 'SP-F';
+        font-family: 'Quicksand';
         font-size: 0.4rem;
         padding: 0.2rem 0;
         margin: 0.2rem 0;
@@ -58,16 +58,16 @@ const StyledWrapper = styled.section`
     }
   }
 `
-const tips = {
-  h: {
-    m: '右面',
-    w: '左面'
-  },
-  v: {
-    m: '下面',
-    w: '上面'
-  }
-}
+// const tips = {
+//   h: {
+//     m: '右面',
+//     w: '左面'
+//   },
+//   v: {
+//     m: '下面',
+//     w: '上面'
+//   }
+// }
 export default function Couple({ popupDan }) {
   const [pos, setPos] = useState('h')
   useEffect(() => {
@@ -78,29 +78,29 @@ export default function Couple({ popupDan }) {
     }
   }, [])
   const handleDC = () => {
-    popupDan('双击666')
+    // popupDan('双击666')
   }
   return (
     <StyledWrapper>
-      <Title title="新郎 · 新娘" />
+      <Title title="Chú rể · Cô dâu" />
       <div className="cp">
         <div className="profile">
           <div className="pic boy" onDoubleClick={handleDC}>
             <img src={FrameImage} alt="man" />
           </div>
-          <div className="name">杨国春🤵🏻</div>
-          <div className="intro">
+          <div className="name">Trường Thăng🤵🏻</div>
+          {/* <div className="intro">
             我有三样东西不可或缺：水，空气，以及{tips[pos].m}那个女人
-          </div>
+          </div> */}
         </div>
         <div className="profile">
           <div className="pic girl" onDoubleClick={handleDC}>
             <img src={FrameImage} alt="man" />
           </div>
-          <div className="name">朱聪👰🏻</div>
-          <div className="intro">
+          <div className="name">Thanh Nga👰🏻</div>
+          {/* <div className="intro">
             我有三样东西不可或缺：水，空气，以及{tips[pos].w}那个男人
-          </div>
+          </div> */}
         </div>
       </div>
     </StyledWrapper>

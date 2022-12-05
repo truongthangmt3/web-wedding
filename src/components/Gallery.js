@@ -18,6 +18,7 @@ const Loading = styled.div`
 `
 const StyledWrapper = styled.section`
   min-height: 50vh;
+  font-family: 'Open Sans';
   width: 100%;
   max-width: 1800px;
   background-color: #fff;

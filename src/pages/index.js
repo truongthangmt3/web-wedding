@@ -32,11 +32,11 @@ export default function Index() {
       <Reset />
       {/* {dan && <Confetti dan={dan} closeDan={closeDan} />} */}
       <FirstView />
-      {/* <Couple popupDan={setDan} /> */}
+      <Couple popupDan={setDan} />
       {/* <Story /> */}
       {ready && <Gallery popupDan={setDan} />}
       <Wedding />
-      {/* <Welcome /> */}
+      <Welcome />
       {/* <Footer /> */}
     </>
   )

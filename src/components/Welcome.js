@@ -107,7 +107,7 @@ const StyledWrapper = styled.section`
       }
       .txt {
         white-space: nowrap;
-        font-family: 'SP-F';
+        font-family: 'Quicksand';
         position: absolute;
         top: 50%;
         left: 50%;
@@ -174,7 +174,7 @@ export default function Welcome() {
             <div className="flowers">
               <Confetti gravity={0.2} numberOfPieces={150} />
             </div>
-            <div className="txt">我们结婚啦!</div>
+            <div className="txt">TRÂN TRỌNG KÍNH MỜI!</div>
           </div>
         ) : (
           <a

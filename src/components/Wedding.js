@@ -110,7 +110,7 @@ const StyledWrapper = styled.section`
 export default function Wedding() {
   return (
     <StyledWrapper>
-      <Title title="Thời gian địa điểm" />
+      <Title title="Thời gian địa điểm rõ ràng" />
       <div className="wrapper">
         <div className="box">
           <h3 className="title">Nhà trai</h3>
@@ -138,7 +138,7 @@ export default function Wedding() {
           <h3 className="title">Nhà gái</h3>
           <ul className="items">
             <li className="item">
-              <span className="label">Vào l</span>
+              <span className="label">Vào lúc</span>
               <span className="txt">11:00 - 18/12/2022</span>
             </li>
             <li className="item">
