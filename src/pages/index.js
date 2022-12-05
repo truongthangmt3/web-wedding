@@ -35,7 +35,7 @@ export default function Index() {
       {/* <Couple popupDan={setDan} /> */}
       {/* <Story /> */}
       {ready && <Gallery popupDan={setDan} />}
-      {/* <Wedding /> */}
+      <Wedding />
       {/* <Welcome /> */}
       {/* <Footer /> */}
     </>
@@ -43,7 +43,12 @@ export default function Index() {
 }
 
 export function Head({ data }) {
-  const { title, description } = data.site.siteMetadata
+  const siteMetadata = {
+    title: 'Lễ thành hôn Trường Thăng - Thanh Nga',
+    author: 'Kasonlu',
+    description: 'wedding-website'
+  }
+  const { title, description } = siteMetadata
   return (
     <>
       <title>{title}</title>

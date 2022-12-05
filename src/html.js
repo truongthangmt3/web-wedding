@@ -5,7 +5,10 @@ export default function HTML(props) {
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge;chrome" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,user-scalable=no,maximum-scale=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no,user-scalable=no,maximum-scale=1"
+        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
@@ -20,5 +23,3 @@ export default function HTML(props) {
     </html>
   )
 }
-
-

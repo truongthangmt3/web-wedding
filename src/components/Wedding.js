@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import Title from './SectionTitle'
-import WeddingImage from '../assets/imgs/wedding.png'
-import Map1Image from '../assets/imgs/map.xiaoqu.png'
-import Map2Image from '../assets/imgs/map.hotel.png'
+import WeddingImage from '../assets/imgs/wedding.jpg'
+import Map1Image from '../assets/imgs/map.nhatrai.png'
+import Map2Image from '../assets/imgs/map.nhagai.png'
 
 const StyledWrapper = styled.section`
   z-index: 1;
@@ -110,20 +110,24 @@ const StyledWrapper = styled.section`
 export default function Wedding() {
   return (
     <StyledWrapper>
-      <Title title="Lễ thành hôn" />
+      <Title title="Thời gian địa điểm" />
       <div className="wrapper">
         <div className="box">
-          <h3 className="title">住宿</h3>
+          <h3 className="title">Nhà trai</h3>
           <ul className="items">
             <li className="item">
-              <span className="label">时间</span>
-              <span className="txt">2021.09.14 12:00（一晚）</span>
+              <span className="label">Thời gian</span>
+              <span className="txt">11:00 - 18/12/2022</span>
             </li>
             <li className="item">
-              <span className="label">地点</span>
+              <span className="label">Vào lúc</span>
               <div className="txt loc">
-                <span>山东省聊城开发区格林东方酒店</span>
-                <a className="map" href={'https://j.map.baidu.com/ab/FGQJ'}>
+                <span>Xóm Khanh Hải, xã Văn Hải</span>
+                <span>huyện Kim Sơn, tỉnh Ninh Bình</span>
+                <a
+                  className="map"
+                  href={'https://goo.gl/maps/X919sqBpR4VDacct8'}
+                >
                   <img src={Map2Image} alt="map" />
                 </a>
               </div>
@@ -131,18 +135,22 @@ export default function Wedding() {
           </ul>
         </div>
         <div className="box">
-          <h3 className="title">典礼</h3>
+          <h3 className="title">Nhà gái</h3>
           <ul className="items">
             <li className="item">
-              <span className="label">时间</span>
-              <span className="txt">2021.09.15 11:00 - 14:00</span>
+              <span className="label">Vào lúc</span>
+              <span className="txt">11:00 - 18/12/2022</span>
             </li>
             <li className="item">
-              <span className="label">地点</span>
+              <span className="label">Tại</span>
               <div className="txt loc">
-                <span>山东省聊城冠县柳林镇 武风文韵小区</span>
-                <a className="map" href={'https://j.map.baidu.com/19/OhRJ'}>
-                  <img src={Map1Image} alt="map" />
+                <span>Xóm Khanh Hải, xã Văn Hải</span>
+                <span>huyện Kim Sơn, tỉnh Ninh Bình</span>
+                <a
+                  className="map"
+                  href={'https://goo.gl/maps/X919sqBpR4VDacct8'}
+                >
+                  <img src={Map2Image} alt="map" />
                 </a>
               </div>
             </li>

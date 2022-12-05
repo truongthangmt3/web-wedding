@@ -28,10 +28,10 @@ const StyledWrapper = styled.section`
     max-width: 1200px;
     margin: auto;
     height: 100vh;
-    background-image :  url(${BGImage}) ;
+    background-image: url(${BGImage});
     /* background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w12.png?x-oss-process=image/resize,w_2500'); */
-    background-repeat: no-repeat; 
-    background-size:  100% auto;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     background-position: center;
     background-attachment: fixed;
     &:after {
@@ -81,14 +81,14 @@ const StyledWrapper = styled.section`
         flex-direction: column;
         align-items: center;
         .time {
-          font-size: 0.16rem;
-          color: #999;
+          font-size: 0.25rem;
+          color: #000;
           margin-top: 0.12rem;
         }
         .countdown {
           font-weight: 800;
-          font-size: 0.2rem;
-          color: #666;
+          font-size: 0.22rem;
+          color: #be5678;
         }
       }
     }
@@ -129,13 +129,14 @@ export default function FirstView() {
     // elRef refers to the <span> rendered below
     typed.current = new Typed(el.current, {
       strings: [
-        ' Thăng ❤️<strong> Nga</strong> ',
-        // 'Quen <strong>biết</strong></strong>',
-        // 'Yêu <strong>thương</strong>',
-        // 'Kết<strong> hôn</strong>'
+        ' Trân trọng kính mời',
+        ' ...',
+        'Tới dự lễ thành hôn',
+        'Của chúng tôi',
+        ' Thăng ❤️<strong> Nga</strong> '
       ],
-      typeSpeed: 200,
-      backSpeed: 50,
+      typeSpeed: 50,
+      backSpeed: 10,
       backDelay: 1000,
       loop: true
     })
@@ -182,8 +183,8 @@ export default function FirstView() {
                 formatValue={(value) => `${value < 10 ? `0${value}` : value}`}
               >
                 <span className="num day">
-                  <Timer.Days /> Ngày <Timer.Hours /> Giờ <Timer.Minutes /> Phút  
-                  {" "}<Timer.Seconds /> Giây
+                  <Timer.Days /> Ngày <Timer.Hours /> Giờ <Timer.Minutes /> Phút{' '}
+                  <Timer.Seconds /> Giây
                 </span>
               </Timer>
             </div>

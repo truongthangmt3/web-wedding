@@ -113,8 +113,7 @@ const dailys = [
   'https://lh6.googleusercontent.com/oAk7NHshHjXIGTNe1MeK6PIkKVr3iRv55odFjI_I4vBIeE3o6ebheE-PK1WzCBB0aK8=w2400',
   'https://lh4.googleusercontent.com/fJYb76Mr_lwMzBEQ88FVIIz82kvL1TF-l68BK9e4HjTqRLyugGvY5WZwefGfCHi_2L8=w2400',
   'https://lh5.googleusercontent.com/fHYURlqyIE16e8qdG1lb9DejwR6xLkBMhGOw6HxNmTmSUp9IaDFxbs5Fk1A5Zs-P_Jo=w2400',
-  'https://lh4.googleusercontent.com/Rked64MlkYtr6vS0MGwpm9H2yaeBGVeqHbckiYFJrY9U4hrDZ7azOAvKCIB1pPHASvY=w2400',
-
+  'https://lh4.googleusercontent.com/Rked64MlkYtr6vS0MGwpm9H2yaeBGVeqHbckiYFJrY9U4hrDZ7azOAvKCIB1pPHASvY=w2400'
 ]
 const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
   const viewCount = useRef(0)
