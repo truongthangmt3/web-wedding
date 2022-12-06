@@ -131,19 +131,19 @@ export default function FirstView() {
   const el = useRef(null)
   // Create reference to store the Typed instance itself
   const typed = useRef(null)
-  useEffect(() => {
-    if (container) {
-      setTimeout(() => {
-        const { width, height } = getComputedStyle(container.current)
-        setSize({ width, height })
-      }, 500)
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (container) {
+  //     setTimeout(() => {
+  //       const { width, height } = getComputedStyle(container.current)
+  //       setSize({ width, height })
+  //     }, 1500)
+  //   }
+  // }, [])
   useEffect(() => {
     // elRef refers to the <span> rendered below
     typed.current = new Typed(el.current, {
       strings: [
-        ' Trân trọng kính mời',
+        ' Trân trọng kính mời 234234',
         ' ...',
         'Tới dự lễ thành hôn',
         'Của chúng tôi',

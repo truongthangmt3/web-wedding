@@ -2,9 +2,8 @@ import { createGlobalStyle } from 'styled-components'
 
 const CommonStyle = createGlobalStyle`
  html{
-     font-size: 100px;
+     font-size: 100px !important;
      font-family: "Quicksand";
-     
  }
  html,body{
     font-family: "Quicksand";
@@ -16,30 +15,25 @@ const CommonStyle = createGlobalStyle`
  }
  @media screen and (min-width: 1681px) {
     html {
-        font-size:120px
+        font-size:120px !important
     }
 }
  @media screen and (max-width: 1680px) {
     html {
-        font-size:100px
+        font-size:100px !important
     }
 }
 
 @media screen and (max-width: 736px) {
     html {
-        font-size:80px
+        font-size:80px !important
     }
 }
 
 @media screen and (max-width: 414px) {
     html {
-        font-size:60px
+        font-size:60px !important
     }
-}
-@font-face{
-    font-family: "Quicksand";
-    font-style: normal;
-    font-weight: normal;
 }
 `
 
