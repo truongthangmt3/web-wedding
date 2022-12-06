@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Title from './SectionTitle'
 import FrameImage from '../assets/imgs/frame.png'
-
+import QRTImage from '../assets/imgs/qr_thang.jpeg'
+import QRNImage from '../assets/imgs/qr_nga.jpeg'
 const StyledWrapper = styled.section`
   width: 100%;
   background-color: #fff;
@@ -23,6 +24,10 @@ const StyledWrapper = styled.section`
       align-items: center;
       justify-content: center;
       margin-right: 0.4rem;
+      .qr {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
       .pic {
         width: 2.8rem;
         height: 2.8rem;
@@ -89,18 +94,18 @@ export default function Couple({ popupDan }) {
             <img src={FrameImage} alt="man" />
           </div>
           <div className="name">Trường Thăng🤵🏻</div>
-          {/* <div className="intro">
-            我有三样东西不可或缺：水，空气，以及{tips[pos].m}那个女人
-          </div> */}
+          <div onDoubleClick={handleDC}>
+            <img className="qr" src={QRTImage} alt="man" />
+          </div>
         </div>
         <div className="profile">
           <div className="pic girl" onDoubleClick={handleDC}>
             <img src={FrameImage} alt="man" />
           </div>
           <div className="name">Thanh Nga👰🏻</div>
-          {/* <div className="intro">
-            我有三样东西不可或缺：水，空气，以及{tips[pos].w}那个男人
-          </div> */}
+          <div onDoubleClick={handleDC}>
+            <img className="qr" src={QRNImage} alt="man" />
+          </div>
         </div>
       </div>
     </StyledWrapper>

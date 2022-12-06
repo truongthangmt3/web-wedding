@@ -143,11 +143,11 @@ export default function FirstView() {
     // elRef refers to the <span> rendered below
     typed.current = new Typed(el.current, {
       strings: [
-        ' Trân trọng kính mời 234234',
+        ' Trân trọng kính mời',
         ' ...',
         'Tới dự lễ thành hôn',
         'Của chúng tôi',
-        ' Thăng ❤️<strong> Nga</strong> '
+        ' <strong>Thăng ❤️ Nga</strong> '
       ],
       typeSpeed: 50,
       backSpeed: 10,

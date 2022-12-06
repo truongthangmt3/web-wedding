@@ -44,7 +44,7 @@ export default function Index() {
 
 export function Head({ data }) {
   const siteMetadata = {
-    title: 'Lễ thành hôn Trường Thăng - Thanh Nga',
+    title: 'Trường Thăng <3 Thanh Nga',
     author: 'Kasonlu',
     description: 'wedding-website'
   }

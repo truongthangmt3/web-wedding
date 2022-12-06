@@ -110,7 +110,7 @@ const StyledWrapper = styled.section`
 export default function Wedding() {
   return (
     <StyledWrapper>
-      <Title title="Thời gian địa điểm rõ ràng" />
+      <Title title="Thời gian và địa điểm" />
       <div className="wrapper">
         <div className="box">
           <h3 className="title">Nhà trai</h3>
@@ -128,7 +128,7 @@ export default function Wedding() {
                   className="map"
                   href={'https://goo.gl/maps/X919sqBpR4VDacct8'}
                 >
-                  <img src={Map2Image} alt="map" />
+                  <img src={Map1Image} alt="map" />
                 </a>
               </div>
             </li>
@@ -138,17 +138,17 @@ export default function Wedding() {
           <h3 className="title">Nhà gái</h3>
           <ul className="items">
             <li className="item">
-              <span className="label">Vào lúc</span>
-              <span className="txt">11:00 - 18/12/2022</span>
+              <span className="label">Thời gian</span>
+              <span className="txt">07:30 - 17/12/2022</span>
             </li>
             <li className="item">
               <span className="label">Tại</span>
               <div className="txt loc">
-                <span>Xóm Khanh Hải, xã Văn Hải</span>
-                <span>huyện Kim Sơn, tỉnh Ninh Bình</span>
+                <span>Xóm Đoài Thượng, xã Nam Hồng</span>
+                <span>huyện Nam Trực, tỉnh Nam Định</span>
                 <a
                   className="map"
-                  href={'https://goo.gl/maps/X919sqBpR4VDacct8'}
+                  href={'https://maps.app.goo.gl/vy9YjRsTfysNoJPX9?g_st=iz'}
                 >
                   <img src={Map2Image} alt="map" />
                 </a>
