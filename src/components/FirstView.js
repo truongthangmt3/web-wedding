@@ -24,14 +24,30 @@ const StyledWrapper = styled.section`
     justify-content: center;
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
     height: 100vh;
-    background-image: url(${BGImage});
+    /* background-image: url(${BGImage}); */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-attachment: fixed;
+    .cover {
+      object-fit: cover;
+      width: 100%;
+      min-height: 100vh;
+    }
+    .bg_image {
+      z-index: -1;
+      max-width: 1400px;
+      width: 100%;
+      margin: auto;
+      /* height: 100vh; */
+      position: absolute;
+      background-attachment: fixed;
+      justify-content: center;
+      display: flex;
+    }
     &:after {
       position: absolute;
       content: '';
@@ -161,6 +177,9 @@ export default function FirstView() {
         />
       )}
       <div className="inner_wrapper">
+        <div className="bg_image">
+          <img className="cover" src={BGImage} />
+        </div>
         <div className="box">
           <div className="title">
             💕<span ref={el}></span>💕
