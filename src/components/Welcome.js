@@ -25,6 +25,7 @@ const StyledWrapper = styled.section`
     align-items: center;
     justify-content: center;
     position: relative;
+    font-family: 'Quicksand';
     .countdown {
       width: 100%;
       max-width: 1200px;
@@ -37,6 +38,7 @@ const StyledWrapper = styled.section`
       justify-content: space-around;
       font-size: 0.24rem;
       .box {
+        font-family: 'Quicksand';
         display: flex;
         flex-direction: column;
         align-items: center;

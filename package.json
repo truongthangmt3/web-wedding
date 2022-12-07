@@ -37,7 +37,8 @@
     "dev": "gatsby develop",
     "deploy": "gatsby build && git add public && git commit -m 'rebuild' && git push",
     "format": "prettier --write 'src/**/*.js'",
-    "docker": "yarn build && docker build . -t windsoft2018/wedding:latest && docker push windsoft2018/wedding:latest"
+    "docker": "yarn build && docker build . -t windsoft2018/wedding:latest && docker push windsoft2018/wedding:latest",
+    "docker1": "yarn build && docker build . -t windsoft2018/wedding:dev && docker push windsoft2018/wedding:dev"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^2.0.7",
