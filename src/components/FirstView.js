@@ -4,9 +4,9 @@ import { HiChevronDoubleDown } from 'react-icons/hi'
 import Confetti from 'confetti-react'
 import Timer from 'react-compound-timer'
 import Typed from 'typed.js'
+import Constant from './Constant'
 
 import FrameImage from '../assets/imgs/frame.png'
-import BGImage from '../assets/imgs/bg.jpg'
 const AniDown = keyframes`
     from{
         transform:translateY(-10px);
@@ -178,7 +178,7 @@ export default function FirstView() {
       )}
       <div className="inner_wrapper">
         <div className="bg_image">
-          <img className="cover" src={BGImage} />
+          <img className="cover" src={Constant.main_picture} />
         </div>
         <div className="box">
           <div className="title">

@@ -87,7 +87,7 @@ export default function Couple({ popupDan }) {
   }
   return (
     <StyledWrapper>
-      <Title title="Chú rể · Cô dâu" />
+      <Title title="Chú rể ❤️ Cô dâu" />
       <div className="cp">
         <div className="profile">
           <div className="pic boy" onDoubleClick={handleDC}>

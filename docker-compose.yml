@@ -1,8 +1,31 @@
+# version: "3.8"
+
+# services:
+#   ogo_web:
+#     build: .
+#     restart: always
+#     ports:
+#       - "3001:80"
+
 version: "3.8"
 
+x-restart-policy:
+  &restart-policy
+  restart: always
+x-default-env-file:
+  &env-file
+  env_file:
+    - .env
+
 services:
-  ogo_web:
-    build: .
+  web:
+    image: windsoft2018/wedding:0.1
     restart: always
     ports:
-      - "3001:80"
+      - "3003:80"
+    network_mode: bridge 
+
+networks:
+  default:
+    external: 
+      name: bridge

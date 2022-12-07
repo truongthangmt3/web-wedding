@@ -139,7 +139,7 @@ export default function Wedding() {
           <ul className="items">
             <li className="item">
               <span className="label">Thời gian</span>
-              <span className="txt">07:30 - 17/12/2022</span>
+              <span className="txt">07:30 - 18/12/2022</span>
             </li>
             <li className="item">
               <span className="label">Tại</span>

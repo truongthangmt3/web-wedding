@@ -120,14 +120,14 @@ const StyledWrapper = styled.section`
   }
 `
 const now = new Date().getTime()
-const deadline = new Date(2021, 8, 15, 0, 0, 0).getTime()
+const deadline = new Date(2022, 11, 18, 0, 0, 0).getTime()
 const initCountNum = deadline - now
 // const initCountNum = 5 * 1000;
 export default function Welcome() {
   const [stop, setStop] = useState(initCountNum < 0)
   return (
     <StyledWrapper>
-      <Title title="Xin chào" />
+      <Title title="Sự có mặt của bạn là niềm vinh hạnh của gia đình chúng tôi" />
       <div className="wrapper">
         <div className="countdown">
           <Timer
@@ -147,29 +147,29 @@ export default function Welcome() {
               <span className="num day">
                 <Timer.Days />
               </span>
-              <span className="txt">天</span>
+              <span className="txt">Ngày</span>
             </div>
             <div className="box">
               <span className="num hour">
                 <Timer.Hours />
               </span>
-              <span className="txt">时</span>
+              <span className="txt">Giờ</span>
             </div>
             <div className="box">
               <span className="num min">
                 <Timer.Minutes />
               </span>
-              <span className="txt">分</span>
+              <span className="txt">Phút</span>
             </div>
             <div className="box">
               <span className="num second">
                 <Timer.Seconds />
               </span>
-              <span className="txt">秒</span>
+              <span className="txt">Giây</span>
             </div>
           </Timer>
         </div>
-        {stop ? (
+        {/* {stop ? (
           <div className="cele">
             <div className="flowers">
               <Confetti gravity={0.2} numberOfPieces={150} />
@@ -184,7 +184,7 @@ export default function Welcome() {
           >
             报名
           </a>
-        )}
+        )} */}
       </div>
     </StyledWrapper>
   )
