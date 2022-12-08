@@ -35,12 +35,13 @@ const StyledWrapper = styled.section`
     .cover {
       object-fit: cover;
       width: 100%;
-      min-height: 100vh;
+      min-height: 120vh;
     }
     .bg_image {
       z-index: -1;
       max-width: 1400px;
       width: 100%;
+      min-height: 1000px;
       margin: auto;
       /* height: 100vh; */
       position: absolute;

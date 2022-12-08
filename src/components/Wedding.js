@@ -148,7 +148,7 @@ export default function Wedding() {
                 <span>huyện Nam Trực, tỉnh Nam Định</span>
                 <a
                   className="map"
-                  href={'https://maps.app.goo.gl/vy9YjRsTfysNoJPX9?g_st=iz'}
+                  href={'https://goo.gl/maps/1oQNfEExtscoarY69'}
                 >
                   <img src={Map2Image} alt="map" />
                 </a>

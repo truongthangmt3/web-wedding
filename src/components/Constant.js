@@ -35,7 +35,7 @@ export default {
     'https://lh5.googleusercontent.com/p4sWb6Cb2qo657XzFK3sEkJu739Cn8PgnvkqP7yv1PSvBTajIKttyw4rT-3u3GEF9CQ=w2400'
   ],
   daily_pictures,
-  main_picture: BGImage1
+  main_picture: BGImage
 }
 
 // export default {
